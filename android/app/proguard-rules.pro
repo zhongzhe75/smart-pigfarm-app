@@ -1,0 +1,36 @@
+# EZVIZ SDK keep rules, scoped to the SDK and its bundled native wrappers.
+# The SDK's own 5.32 AAR has an empty consumer ProGuard file, while the
+# official EZVIZ Android sample applies these rules to release builds.
+-keep class com.ezviz.opensdk.** { *; }
+-dontwarn com.ezviz.**
+-keep class com.ezviz.** { *; }
+-dontwarn com.ez.**
+-keep class com.ez.** { *; }
+-dontwarn com.hc.CASClient.**
+-keep class com.hc.CASClient.** { *; }
+-dontwarn com.videogo.**
+-keep class com.videogo.** { *; }
+-dontwarn com.hik.TTSClient.**
+-keep class com.hik.TTSClient.** { *; }
+-dontwarn com.hik.stunclient.**
+-keep class com.hik.stunclient.** { *; }
+-dontwarn com.hik.streamclient.**
+-keep class com.hik.streamclient.** { *; }
+-dontwarn com.hikvision.sadp.**
+-keep class com.hikvision.sadp.** { *; }
+-dontwarn com.hikvision.netsdk.**
+-keep class com.hikvision.netsdk.** { *; }
+-dontwarn com.neutral.netsdk.**
+-keep class com.neutral.netsdk.** { *; }
+-dontwarn com.hikvision.audio.**
+-keep class com.hikvision.audio.** { *; }
+-dontwarn com.mediaplayer.audio.**
+-keep class com.mediaplayer.audio.** { *; }
+-dontwarn com.hikvision.wifi.**
+-keep class com.hikvision.wifi.** { *; }
+-dontwarn com.hikvision.keyprotect.**
+-keep class com.hikvision.keyprotect.** { *; }
+-dontwarn org.MediaPlayer.PlayM4.**
+-keep class org.MediaPlayer.PlayM4.** { *; }
+-dontwarn com.sun.jna.**
+-keep class com.sun.jna.** { *; }
